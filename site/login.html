@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+		<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+		<title> Meeting Management System </title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/app.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" href="/favicon.ico">
+	</head>
+	<body>
+		<nav id="mpNavbar" class="navbar">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Welcome to Meeting</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container wrapper-container">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-sm-4">
+						<div id="imgBox"></div>
+					</div>
+					<div class="col-sm-8">
+						<div id="loginBox">
+							<h2 class="box-title">Sign In</h2>
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="inputName" class="col-sm-4 control-label">Name</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="inputName" placeholder="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword" class="col-sm-4 control-label">Password</label>
+									<div class="col-sm-6">
+										<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="selectRole" class="col-sm-4 control-label">Role</label>
+									<div class="col-sm-6">
+										<select class="form-control">
+										  <option>Manger</option>
+										  <option>User</option> 
+										</select> 
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-4 col-sm-6">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox">
+												Remember me </label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-4 col-sm-6">
+										<a type="submit" href="meeting.html" class="btn btn-default">
+											Sign in
+										</a>
+										<P class="register-line">
+											Haven't one account? Click <a href="register.html" id="registerLink" class="">Register</a>
+										</P>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap core JavaScript -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+.align-center {
+	text-align: center;
+}
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+.hide {
+	display: none; 
+}
+
+.badge {
+	  @include border-radius(3px);
+    font-size: 10px;
+    padding: 2px 4px;
+    background: red;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+.strike {
+	text-decoration: line-through;
+}
+.bold {
+	font-weight: bold;
+}
+
+.bg-blue {
+	background: $blue;
+}
+.bg-green {
+	background: $green;
+}
+.bg-dark-green {
+	background: $dark-green;
+}
+.bg-orange {
+	background: $orange;
+}
+.bg-red {
+	background: $red;
+}
+.bg-pink {
+	background: $pink;
+}
+.bg-cyan {
+	background: $cyan;
+}
+
+.dropdown-menu {
+	@include transform(scale(0));
+	@include opacity(0);
+	@include transition(all .3s);
+	@include transform-origin(top right);
+	display: block;
+	> li {
+		> a {
+			&:hover, &:focus {
+				background: rgba(59, 184, 230, 0.06);
+			}
+		}
+	}
+}
+
+.open {
+	> .dropdown-menu {
+		@include transform(scale(1));
+    @include opacity(1);
+	}
+}

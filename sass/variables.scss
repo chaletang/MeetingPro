@@ -1,0 +1,26 @@
+/*Default Variables*/
+$text-color: #333 !default;
+$link-color: #00a1dd !default;
+$font-size: 16px !default;
+$line-height: 23px !default; 
+$white: #ffffff;
+$blue: #00bcd4;
+$green: #8bc34a;
+$dark-green: #009688;
+$orange: #ff9800;
+$red: #e91e63;
+$pink: #E91ECF;
+$cyan: rgb(41, 197, 189);
+
+
+/*Media Variables*/
+$screen: screen;
+$print: print;
+$media-max: max-width;
+$media-min: min-width;
+$lg-min: 1200px;
+$md-max: $lg-min - 1;
+$md-min: 980px;
+$sm-max: $md-min - 1;
+$sm-min: 768px;
+$xs-max: $sm-min - 1;
